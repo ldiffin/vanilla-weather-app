@@ -1,0 +1,47 @@
+body {
+  font-family: monospace;
+}
+h1 {
+  text-align: center;
+  margin-top: 20px;
+}
+.weather-app-wrapper {
+  max-width: 600px;
+  display: block;
+  margin: 0 auto;
+}
+.weather-app {
+  border: 2px solid black;
+  border-radius: 20px;
+}
+.top-header {
+  text-align: center;
+}
+
+.units-button {
+  position: relative;
+  left: 200px;
+}
+
+.icon-text {
+  text-align: center;
+}
+
+.temp {
+  text-align: center;
+  font-size: 64px;
+}
+
+.weather-stats {
+  text-align: center;
+}
+
+.future-forecast {
+  text-align: center;
+}
+
+.future-forecast-container {
+  border-top: 1px solid black;
+  margin-top: 5px;
+  padding: 5px;
+}

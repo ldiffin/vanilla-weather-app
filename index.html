@@ -23,7 +23,15 @@
       <div class="weather-app-wrapper">
         <div class="weather-app">
           <div class="top-header">
-            Monday 8:21 pm <span class="units-button">C | F</span>
+            <form id="search-form">
+              <input
+                type="search"
+                placeholder="Enter city name.."
+                class="search-field"
+                id="search-input"
+              />
+              <input type="submit" value="search" class="search-button" />
+            </form>
           </div>
           <h1 id="city"></h1>
           <img

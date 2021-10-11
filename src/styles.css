@@ -23,6 +23,7 @@ img {
 }
 .top-header {
   text-align: center;
+  margin-top: 15px;
 }
 
 .units-button {
@@ -53,6 +54,7 @@ img {
   background-color: #eafafa;
   border-bottom-left-radius: 18px;
   border-bottom-right-radius: 18px;
+  overflow: hidden;
 }
 
 .col:hover {
@@ -63,4 +65,18 @@ img {
   font-size: 35px;
   padding-top: 4px;
   padding-bottom: 4px;
+}
+
+.search-button {
+  border-radius: 5px;
+  background-color: #196767;
+  color: #eafafa;
+  box-shadow: 1px 1px 1px darkslategrey;
+  padding-left: 10px;
+  padding-right: 10px;
+}
+
+.search-field {
+  border-radius: 5px;
+  box-shadow: 1px 1px 1px darkslategrey;
 }

@@ -80,3 +80,15 @@ img {
   border-radius: 5px;
   box-shadow: 1px 1px 1px darkslategrey;
 }
+
+a {
+  text-decoration: none;
+}
+.units .active {
+  color: black;
+  cursor: default;
+}
+
+.units .active:hover {
+  text-decoration: none;
+}

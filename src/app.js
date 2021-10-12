@@ -5,6 +5,7 @@ function displayTemperature(response) {
   let humidityElement = document.querySelector("#humidity");
   let lowElement = document.querySelector("#temp-min");
   let description = document.querySelector("#weather-description");
+  let iconElement = document.querySelector("#weather-icon");
 
   cityElement.innerHTML = response.data.name;
   temperatureElement.innerHTML = Math.round(response.data.main.temp);
@@ -12,6 +13,11 @@ function displayTemperature(response) {
   humidityElement.innerHTML = response.data.main.humidity;
   lowElement.innerHTML = Math.round(response.data.main.temp_min);
   description.innerHTML = response.data.weather[0].description;
+  iconElement.setAttribute(
+    "src",
+    `http://openweathermap.org/img/wn/${response.data.weather[0].icon}@2x.png`
+  );
+  iconElement.setAttribute("alt", response.data.weather[0].description);
 
   celsiusTemperature = response.data.main.temp;
 }

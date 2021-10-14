@@ -21,6 +21,29 @@ function displayTemperature(response) {
 
   celsiusTemperature = response.data.main.temp;
 }
+
+function displayForecast() {
+  let forecastElement = document.querySelector("#forecast");
+
+  let days = ["Tue", "Wed", "Thu"];
+
+  let forecastHTML = `<div class="row">`;
+  days.forEach(function (day) {
+    forecastHTML =
+      forecastHTML +
+      `
+      <div class="col future-forecast">
+        <span class="day">${day}</span>
+        <br />
+        <i class="fas fa-sun"></i>
+        <br />
+        <span>23°</span></div>`;
+  });
+
+  forecastHTML = forecastHTML + `</div>`;
+  forecastElement.innerHTML = forecastHTML;
+}
+
 function searchCity(city) {
   let apiKey = "88bba71914832f5391f5f9e17c55e7bb";
   let apiUrl = `https://api.openweathermap.org/data/2.5/weather?q=${city}&appid=${apiKey}&units=metric`;
@@ -46,6 +69,7 @@ function displayFarhenheit(event) {
 }
 
 searchCity("Toronto");
+displayForecast();
 
 let celsiusTemperature = null;
 

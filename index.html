@@ -15,6 +15,10 @@
       integrity="sha384-F3w7mX95PdgyTmZZMECAngseQB83DfGTowi0iMjiWaeVhAn4FJkqJByhZMI3AhiU"
       crossorigin="anonymous"
     />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Montserrat:wght@600&family=Titillium+Web:wght@200&display=swap"
+      rel="stylesheet"
+    />
     <script src="https://unpkg.com/axios/dist/axios.min.js"></script>
     <link rel="stylesheet" href="src/styles.css"
   </head>
@@ -48,7 +52,10 @@
           <h1 id="city"></h1>
           <img src="" id="weather-icon" />
           <div class="icon-text" id="weather-description"></div>
-          <div class="temp" id="temperature"><span>°</span></div>
+          <div class="temp-container">
+            <div class="temp" id="temperature"></div>
+            <div class="temp">°C</div>
+          </div>
           <div class="row weather-stats">
             <div class="col-4">Humidity: <span id="humidity"></span>%</div>
             <div class="col-4">Wind: <span id="wind"></span> km/h</div>

@@ -53,10 +53,9 @@ function displayForecast(response) {
       <div class="col future-forecast">
         <span class="day">${formatDay(forecastDay.dt)}</span>
         <br />
-        <img src="http://openweathermap.org/img/wn/${
+        <div class="weather-forecast-icon"><img src="http://openweathermap.org/img/wn/${
           forecastDay.weather[0].icon
-        }@2x.png" alt="" width="42">
-        <br />
+        }@2x.png" alt="" width="100%"></div>
         <span class="forecast-max">${Math.round(
           forecastDay.temp.max
         )}°/<span class="forecast-min">${Math.round(

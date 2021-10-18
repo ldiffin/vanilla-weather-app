@@ -1,14 +1,28 @@
 body {
-  font-family: monospace;
+  font-family: "Titillium Web", sans-serif;
+  background-image: linear-gradient(
+    to right top,
+    #a2a79e,
+    #a39e8f,
+    #a79386,
+    #a98786,
+    #a27e8e
+  );
 }
 h1 {
   text-align: center;
   margin-top: 20px;
+  font-family: "Montserrat", sans-serif;
+  color: #2e1e0f;
 }
 
 img {
   display: block;
   margin: 0 auto;
+}
+
+a {
+  text-decoration: none;
 }
 
 .weather-app-wrapper {
@@ -20,6 +34,8 @@ img {
   border: 2px solid black;
   border-radius: 20px;
   box-shadow: 3px 3px 3px darkslategrey;
+  background-color: white;
+  margin-top: 20px;
 }
 .top-header {
   text-align: center;
@@ -35,8 +51,14 @@ img {
   text-align: center;
 }
 
-.temp {
+.temp-container {
   text-align: center;
+}
+
+.temp {
+  display: inline-block;
+
+  margin: 0 auto;
   font-size: 64px;
 }
 
@@ -44,32 +66,9 @@ img {
   text-align: center;
 }
 
-.future-forecast {
-  text-align: center;
-}
-
-.future-forecast-container {
-  border-top: 1px solid #c1f0f0;
-  margin-top: 5px;
-  background-color: #eafafa;
-  border-bottom-left-radius: 18px;
-  border-bottom-right-radius: 18px;
-  overflow: hidden;
-}
-
-.col:hover {
-  background-color: #196767;
-}
-
-.fa-sun {
-  font-size: 35px;
-  padding-top: 4px;
-  padding-bottom: 4px;
-}
-
 .search-button {
   border-radius: 5px;
-  background-color: #196767;
+  background-color: #a27e8e;
   color: #eafafa;
   box-shadow: 1px 1px 1px darkslategrey;
   padding-left: 10px;
@@ -81,9 +80,6 @@ img {
   box-shadow: 1px 1px 1px darkslategrey;
 }
 
-a {
-  text-decoration: none;
-}
 .units .active {
   color: black;
   cursor: default;
@@ -91,4 +87,34 @@ a {
 
 .units .active:hover {
   text-decoration: none;
+}
+
+/* Forecast */
+
+.weather-forecast-icon {
+  border-radius: 10px;
+  background: #a2a79e;
+  box-shadow: 3px 2px 2px #494b4e;
+}
+
+.future-forecast-container {
+  border-top: 1px solid #e2e8ce;
+  margin-top: 5px;
+  background-color: white;
+  border-bottom-left-radius: 18px;
+  border-bottom-right-radius: 18px;
+  overflow: hidden;
+  padding: 10px;
+}
+
+.forecast-min {
+  opacity: 75%;
+}
+
+.future-forecast {
+  text-align: center;
+}
+
+.forecast-max {
+  color: #a77464;
 }

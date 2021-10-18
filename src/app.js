@@ -82,3 +82,5 @@ function submitCity(event) {
 
 let form = document.querySelector("#search-form");
 form.addEventListener("submit", submitCity);
+
+searchCity("Toronto");

@@ -82,30 +82,3 @@ function submitCity(event) {
 
 let form = document.querySelector("#search-form");
 form.addEventListener("submit", submitCity);
-
-function displayFarhenheit(event) {
-  event.preventDefault();
-  let fahrenheitTemperature = (celsiusTemperature * 9) / 5 + 32;
-  let temperatureElement = document.querySelector("#temperature");
-  temperatureElement.innerHTML = Math.round(fahrenheitTemperature);
-  celsiusLink.classList.remove("active");
-  fahrenheitLink.classList.add("active");
-}
-
-searchCity("Toronto");
-
-let celsiusTemperature = null;
-
-let fahrenheitLink = document.querySelector("#fahrenheitLink");
-fahrenheitLink.addEventListener("click", displayFarhenheit);
-
-function displayCelsius(event) {
-  event.preventDefault();
-  let temperatureElement = document.querySelector("#temperature");
-  temperatureElement.innerHTML = Math.round(celsiusTemperature);
-  fahrenheitLink.classList.remove("active");
-  celsiusLink.classList.add("active");
-}
-
-let celsiusLink = document.querySelector("#celsiusLink");
-celsiusLink.addEventListener("click", displayCelsius);

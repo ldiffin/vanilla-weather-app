@@ -74,10 +74,16 @@ a {
   color: #eafafa;
   padding-left: 20px;
   padding-right: 20px;
+  border: #a27e8e;
 }
 
 .search-button:hover {
   background-color: #a77464;
+}
+
+.form-control:focus {
+  border-color: #a2a79e;
+  box-shadow: 0 0 0 0.2rem rgba(162, 167, 158, 0.25);
 }
 
 .search-field {

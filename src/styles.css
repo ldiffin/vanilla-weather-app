@@ -30,6 +30,7 @@ a {
   max-width: 600px;
   display: block;
   margin: 0 auto;
+  padding-bottom: 15px;
 }
 .weather-app {
   border: 2px solid black;
@@ -71,14 +72,16 @@ a {
   border-radius: 5px;
   background-color: #a27e8e;
   color: #eafafa;
-  box-shadow: 1px 1px 1px darkslategrey;
-  padding-left: 10px;
-  padding-right: 10px;
+  padding-left: 20px;
+  padding-right: 20px;
+}
+
+.search-button:hover {
+  background-color: #a77464;
 }
 
 .search-field {
   border-radius: 5px;
-  box-shadow: 1px 1px 1px darkslategrey;
 }
 
 .units .active {
